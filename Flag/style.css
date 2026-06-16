@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f0f0f0;
+}
+
+.container{
+    display:flex;
+    gap:40px;
+}
+
+/* Common Flag Style */
+.flag{
+    width:300px;
+    height:180px;
+    position:relative;
+    border:1px solid #000;
+}
+
+/* Palestine */
+.palestine{
+    background:
+    linear-gradient(
+        to bottom,
+        #000 33.33%,
+        #fff 33.33%,
+        #fff 66.66%,
+        #007a3d 66.66%
+    );
+}
+
+.palestine .triangle{
+    position:absolute;
+    left:0;
+    top:0;
+    width:0;
+    height:0;
+    border-top:90px solid transparent;
+    border-bottom:90px solid transparent;
+    border-left:140px solid #ce1126;
+}
+
+/* Argentina */
+.argentina{
+    background:
+    linear-gradient(
+        to bottom,
+        #74acdf 33.33%,
+        #fff 33.33%,
+        #fff 66.66%,
+        #74acdf 66.66%
+    );
+}
+
+.argentina::after{
+    content:"☀";
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-size:40px;
+    color:gold;
+}
+
+/* China */
+.china{
+    background:#de2910;
+}
+
+.star{
+    position:absolute;
+    color:#ffde00;
+}
+
+.big{
+    font-size:50px;
+    top:15px;
+    left:20px;
+}
+
+.s1{
+    font-size:20px;
+    top:15px;
+    left:90px;
+}
+
+.s2{
+    font-size:20px;
+    top:40px;
+    left:115px;
+}
+
+.s3{
+    font-size:20px;
+    top:70px;
+    left:110px;
+}
+
+.s4{
+    font-size:20px;
+    top:95px;
+    left:85px;
+}
